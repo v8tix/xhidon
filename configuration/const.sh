@@ -1,4 +1,4 @@
-TAG="0.0.1.v20200317"
+TAG="0.0.2.v20200324"
 IMAGE="xhidon"
 IMAGE_TAG=""${IMAGE}":"${TAG}""
 
