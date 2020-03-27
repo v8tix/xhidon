@@ -4,7 +4,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="display: block; border-width:0; float: right" align="left" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a><br/>
 
-Welcome to the Xhidon project. This image is part of the [Drako](https://github.com/v8tix/drako) project.
+Welcome to the Xhidon project. This image is part of the [k8sb](https://github.com/v8tix/k8sb) project.
 
 #### Prerequisites
 * Docker Engine installed.
@@ -17,8 +17,8 @@ Welcome to the Xhidon project. This image is part of the [Drako](https://github.
 * :exclamation: Under the configuration directory you will find a file called const.sh. Please review this file carefully and make the necessary changes.  
 * Each constant is described below:
   * HOST: The domain where your microservice will be allocated. If you are using a termination point, use localhost instead.
-  * HOST_PORT: The TCP port on the Docker host. By default is 8080.
-  * CNTR_PORT: The TCP port on the Docker container. By default is 8080.
+  * HOST_PORT: The TCP port on the Docker host. By default, this setting is 8080.
+  * CNTR_PORT: The TCP port on the Docker container. By default, this setting is 8080.
   * :warning: CNTR_MICROSERVICE_CONF_DIR and CONFIG_TEMPLATE_DIR: Please don't modify them. They are used by the container to generate your custom configurations.  
   * SPRING_PROFILE: There are only two possible values: 'prod' and 'dev'. For more information about which one to use, please refer to the [Social]("github.com/v8tix/social") microservice project.
   * DB_HOST_CONN_DIR: Indicates the host directory where you created a file called db_con with your MongoDB database connection URL inside.
@@ -32,7 +32,7 @@ Welcome to the Xhidon project. This image is part of the [Drako](https://github.
   * configuration:
     * Here you can change the image name and its tag. 
   * build.
-    * The Docker file and the container artifacts need must be included here.
+    * The Docker file, and the container artifacts need must be included here.
     * Also in this directory you can find the build.sh script. Execute it if you plan to build this image. 
     * Once the image was built, you can go to the executables directory.
   * executables.
@@ -47,7 +47,8 @@ Welcome to the Xhidon project. This image is part of the [Drako](https://github.
         * Otherwise execute the delete.sh script instead.
 ## Authors
 * Initial work
-  * V8TIX - info@v8tix.com   
+
+![v8tix logo](resources/v8tix-logo.jpg) <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Contact us](mailto:info@v8tix.com)</p>  
 ## License  
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="display: block; border-width:0; float: right" align="left" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>&nbsp;</a>This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).  
   
